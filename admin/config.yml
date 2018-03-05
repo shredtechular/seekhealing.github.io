@@ -33,6 +33,20 @@ collections:
             widget: "select"
             options: ["article", "citation", "connect", "connection-agent-form", "double", "double-full", "events", "gauges", "hero", "locations", "memorial-wall", "message-box", "parallax", "resource", "single", "stories", "stripe", "subnav", "subscribe", "team", "triple"]
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "section-hero" # Used in routes, e.g. /admin/collections/blog
+    label: "Section_Hero" # Used in the UI
+    folder: "_sections/hero" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template 
+    fields: # The fields for each document, usually in front matter
+      - {label: "Type", name: "type", widget: "hidden", default: "hero"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        pattern: ['\s', "Can not contain whitespace characters"]
+      - {label: "Background Image", name: "video", widget: "image", default: "/assets/images/home-bkgrnd.jpg"}
+      - {label: "Video URL", name: "video", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "otherContent" 
     label: "Miscellaneous Content" 
     delete: false # Prevent users from deleting documents in this collection
