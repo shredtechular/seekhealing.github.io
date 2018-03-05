@@ -43,8 +43,22 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-        pattern: ['\s', "Can not contain whitespace characters"]
-      - {label: "Background Image", name: "video", widget: "image", default: "/assets/images/home-bkgrnd.jpg"}
+        pattern: ['\\s', "Can not contain whitespace characters"]
+      - {label: "Background Image", name: "background", widget: "image", default: "/assets/images/home-bkgrnd.jpg"}
+      - {label: "Video URL", name: "video", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "section-team" # Used in routes, e.g. /admin/collections/blog
+    label: "Section_Team" # Used in the UI
+    folder: "_sections/team" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template 
+    fields: # The fields for each document, usually in front matter
+      - {label: "Type", name: "type", widget: "hidden", default: "team"}
+      - {label: "Category", name: "category", widget: "string", default: "Directors"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Job Title", name: "title", widget: "string"}
+      - {label: "Director's Picture", name: "image", widget: "image"}
+      - {label: "Order", name: "order", widget: "number", valueType: "int", min: "1"}
       - {label: "Video URL", name: "video", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "otherContent" 
