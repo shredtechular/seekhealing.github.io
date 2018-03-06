@@ -8,4 +8,4 @@ order: 5
 ---
 **Background**: Steven Tyler was in Aerosmith
 
-**Responsibilities": Steven writes music.
+**Responsibilities**: Steven writes music.
