@@ -2,7 +2,6 @@
 layout: page
 title: Home
 permalink: /
-transparent-header: true
 sections:
   - type: "hero"
     title: "home"
@@ -14,4 +13,5 @@ sections:
     title: "asheville-pilot-program"
   - type: "subscribe"
   - type: "stories"
+transparent-header: true
 ---
