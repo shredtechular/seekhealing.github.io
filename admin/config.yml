@@ -201,7 +201,7 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-        pattern: ['/\s/', "Can not contain whitespace characters"]
+        pattern: ['/\s', "Can not contain whitespace characters"]
       - {label: "Background Image", name: "background", widget: "image", default: "/assets/images/home-bkgrnd.jpg"}
       - {label: "Video URL", name: "video", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
