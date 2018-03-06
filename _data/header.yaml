@@ -3,6 +3,8 @@ logo-alt: SeekHealing Text
 nav:
   - title: Learn
     url: /learn/
+  - title: Our Programs
+    url: /our-programs/
   - submenu:
       - title: Program Methodology
         url: /our-programs/
