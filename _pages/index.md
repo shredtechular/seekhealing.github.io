@@ -1,17 +1,18 @@
 ---
 layout: page
-title: Home
 permalink: /
+title: Home
 sections:
-  - type: "hero"
-    title: "home"
-  - type: "single"
-    title: "rumi-quote"
-  - type: "single"
-    title: "about-seekhealing"
-  - type: "single"
-    title: "asheville-pilot-program"
-  - type: "subscribe"
-  - type: "stories"
+  - title: new-hero
+    type: hero
+  - title: rumi-quote
+    type: single
+  - title: about-seekhealing
+    type: single
+  - title: asheville-pilot-program
+    type: single
+  - type: subscribe
+  - type: stories
 transparent-header: true
 ---
+
