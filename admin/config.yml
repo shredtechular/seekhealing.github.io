@@ -32,7 +32,7 @@ collections:
             name: "type"
             widget: "select"
             options: ["article", "citation", "connect", "connection-agent-form", "double", "double-full", "events", "gauges", "hero", "locations", "memorial-wall", "message-box", "parallax", "resource", "single", "stories", "stripe", "subnav", "subscribe", "team", "triple"]
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: "false"}
   - name: "otherContent" 
     label: "Miscellaneous Content" 
     delete: false # Prevent users from deleting documents in this collection
