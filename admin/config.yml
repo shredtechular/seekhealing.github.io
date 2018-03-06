@@ -33,7 +33,7 @@ collections:
             name: "type"
             widget: "select"
             options: ["article", "citation", "connect", "connection-agent-form", "double", "double-full", "events", "gauges", "hero", "locations", "memorial-wall", "message-box", "parallax", "resource", "single", "stories", "stripe", "subnav", "subscribe", "team", "triple"]
-          - {label: "Transparent Header?", name:"transparent-header", widget: "boolean", default: "false"}
+      - {label: "Transparent Header?", name:"transparent-header", widget: "boolean", default: "false"}
       - {label: "Body", name: "body", widget: "markdown", required: "false"}
   - name: "otherContent" 
     label: "Miscellaneous Content" 
