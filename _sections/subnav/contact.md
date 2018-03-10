@@ -1,11 +1,9 @@
 ---
 type: subnav
+title: Contact
 nav: About
-image: /assets/images/subnav-contact.png
-link: "/contact/"
-order: 3
+link: /contact/
+image: /assets/images/owl-family.png
+order: 4
 ---
-
-## Contact
-
-Just saying hello could open up a world of possibility
+Contact
