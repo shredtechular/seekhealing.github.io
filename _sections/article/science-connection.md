@@ -6,7 +6,7 @@ header: >-
   connectedness:</span>
 header-img: /assets/images/owl-science-250.png
 author: 'Rachel Wurzman, PhD'
-author-title: SeekHealing Director of Science
+author-title: SeekHealing "Director" of Science
 author-img: /assets/images/team-headshot-rachel.jpg
 author-subheader: Postdoctoral Fellow at the University of Pennsylvania
 ---
