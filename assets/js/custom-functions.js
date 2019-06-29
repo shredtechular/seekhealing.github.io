@@ -12,11 +12,18 @@ $(function () {
     if ($("#cuForm").length) {
       $("#cuForm").submit(function() {
 
-        var pgHistory = "&pageHistory=0&fbzx=6549222362718651000&fvv=1"
+        var pgHistory = "&pageHistory=0&fbzx=6549222362718651000&fvv=1";
+        var url = "https://docs.google.com/forms/d/e/1FAIpQLSeTtbYt0OKcqCYJqvwyQr284R_18TIXde02beSnvwATZCvxJQ/formResponse";
+        if ($("#form-identifier").val() == "volunteer") {
+          url = "https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLScEc_LvhC85sTBeHLUKUlEf7BG8m-kXZxJXdj9NE5uj6jmm8g/formResponse";
+        }
+                
+          // url: "https://docs.google.com/forms/d/e/1FAIpQLSeTtbYt0OKcqCYJqvwyQr284R_18TIXde02beSnvwATZCvxJQ/formResponse",
+
 
         $.ajax({
           type: 'POST',
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSeTtbYt0OKcqCYJqvwyQr284R_18TIXde02beSnvwATZCvxJQ/formResponse",
+          url: url,
           data: $("#cuForm").serialize().replace(/[^&]+=&/g, '').replace(/&[^&]+=$/g, '') + pgHistory,
           dataType: "xml",
           complete: function() {
